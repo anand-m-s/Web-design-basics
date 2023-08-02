@@ -1,35 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #000;
     color: #fff;
 }
-.header{
+
+.header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/IN-en-20230724-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/IN-en-20230724-popsignuptwoweeks-perspective_alpha_website_large.jpg);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
     position: relative;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
 }
-.logo{
+
+.logo {
     width: 9.25rem;
     height: 2.5rem;
     cursor: pointer;
-    
+
 }
-nav button{
+
+nav button {
     border: 0;
     outline: 0;
     background: #db0001;
@@ -41,71 +46,316 @@ nav button{
     cursor: pointer;
 
 }
-.lan-btn{
+
+.lan-btn {
     display: inline-flex;
     align-items: center;
     background: transparent;
-    border: 1px solid  #fff;
-    padding: 7px 10px ;
+    border: 1px solid #fff;
+    padding: 10px 14px;
+    font-size: 14px;
 
 }
-.sign-in{
-    font-weight: bold;
+.lan-btn1{
+    height: 2.5rem;
+    width: 6rem;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
 }
-.lan-btn img{
+
+.sign-in {
+    font-weight: bold;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+.lan-btn img {
     width: 10px;
     margin-left: 10px;
 }
-.lan-btn i{
+
+.lan-btn i {
     padding-right: 1rem;
 }
-.header-content{
+
+.header-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     margin-top: 30px;
 }
-.header-content h1{
+
+.header-content h1 {
     font-size: 2.6rem;
     font-weight: 700;
-    
+
 }
-.header-content h3{
+
+.header-content h3 {
+    font-size: 1.125rem;
     font-weight: 400;
     padding: 2rem;
-    
+
 }
-.email-signup{
-   background: #fff;
-   border-radius: 4px;
-   display: flex;
-   align-items: center;
-   margin-top: 30px;
-   overflow: hidden;
+
+.email-signup {
+    
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.inp-email {
+    padding: 20px;
+    flex: 1;
+    border: 0;
+    outline: 0;    
+    border-radius: 4px;
+    margin-left: 150px;
+    margin-right: 9px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+   
   
 }
-.inp-email{
-flex: 1;
-border:0;
-outline: 0;
-margin-left: 20px;
-}
-.inp-btn{
+
+
+.inp-btn {
     border: 0;
     outline: 0;
     background: rgb(229, 9, 20);
     color: #fff;
     font-size: 16px;
     padding: 15px;
-    cursor: pointer; 
+    cursor: pointer;
     font-size: 23px;
     font-weight: bold;
-    transition-duration: 250ms;
-    transition-property: background-color, border-color;
-    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    border-radius: 4px;
+    margin-right: 60px;
 }
+.style-cards h2{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+    margin-left: 80px;
+
+}
+.style-cards p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-left: 80px;
+}
+.card-0,.card-1,.card-2,.card-3{
+    border-top: 8px rgb(37, 36, 36) solid;
+}
+.card-0{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 35px;
+}
+.imgnvid{
+    position: relative;
+
+}
+.imgnvid video{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imgnvid .vid{
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 82%;
+    max-height: 54%;
+    position: absolute;
+    top: 21%;
+    left: 14%;
+}
+.card-1{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  
+    
+}
+.card-1 img{
+    margin-right: 50px;
+    width: 35%;
+    
+}
+.text-1{
+    margin-right: 10rem;
+}
+
+.card-2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0 6rem;
+    
+}
+.imgnvid1{
+    position: relative;
+
+}
+.imgnvid1 img{
+    margin-left: 10rem;
+    width: 70%;
+
+}
+
+.imgnvid1 video{
+    position: absolute;
+    top: 1.5rem;
+    left: 16rem;
+    z-index: -1;
+    max-width: 45%;
+    
+}
+.card-3{
+    display: flex;
+    align-items: center;
+    border-bottom: 8px rgb(37, 36, 36) solid;
+}
+.faq{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 60px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 70rem;
+}
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #3f3d3d;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.content p{
+    font-size:25px;
+}
+label{
+    font-size: 25px;
+}
+label::after{
+    content: '+';
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+}
+.accordion input{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+#lastp{
+    text-align: center;
+    font-size: 23px;
+    padding-bottom: 30px;
+}
+.inp-email1{
+    height: 50px;
+    width: 30rem;
+    padding: 20px;   
+    border-radius: 4px;
+    margin-left: 150px;
+    margin-right: 9px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.inp-btn1{
+    border: 0;
+    outline: 0;
+    background: rgb(229, 9, 20);
+    color: #fff;
+    font-size: 16px;
+    height: 45px;
+    width: 10rem;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 10rem;
+}
+.base-content{
+    border-bottom: 8px rgb(37, 36, 36) solid;
+}
+.email-signup2{
+    margin-bottom: 70px;
+}
+.footer{
+    
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+    margin-top: 4rem;
+
+}
+.footer , .footer a{
+    color: #d7cccc;
+    font-size: 0.9rem;
+ 
+
+}
+.foot-col{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.foot-col li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+#call{
+    margin-bottom: 30px;
+}
+.lan-btn2{
+background: transparent;
+color: #fff;
+text-align: center;
+font-size: 14px;
+border: 1px solid #fff;
+padding: 8px;
+border-radius: 5px;
+
+}
+.lan-btn2 img{
+width: 7px;
+}
+
+
+
 
 
 
